@@ -1,6 +1,7 @@
 from pathlib import Path
 import os, sys, stat
 import pandas as pd
+from tqdm.auto import tqdm
 import requests
 import scraper_arxiv as scraper
 
@@ -18,11 +19,11 @@ while i < len(subject):
 choice = input("Choose the subject you want to scrape.\n")
 choice_subject = str(choice)
 x = 0
-while x < 5000 :
+while x == 0 :
 	URL_arxiv = f"https://arxiv.org/search/?searchtype=all&query=lecture+notes&abstracts=show&size=200&order=-announced_date_first&start={x}"
 	scraper.arxiv(URL_arxiv,choice_subject)
 	print(x)
-	x += 200      	
+	x += 200     	
 
 df = pd.read_csv('arxiv_data.csv')
 print("key",df)
@@ -37,5 +38,8 @@ for i in range(Len) :
 	print("The category .", matrix_data[i,2])
 	print("the url :", arxiv_url)
 	response = requests.get(arxiv_url)
+	total_size_in_bytes= int(response.headers.get('content-length', None))
+	progress_bar = tqdm(total=total_size_in_bytes, unit='iB', unit_scale=True)
+	progress_bar.update(len(response.content))
 	category.write_bytes(response.content)
 
