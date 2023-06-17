@@ -1,4 +1,5 @@
 from pathlib import Path
+import os, sys, stat
 import pandas as pd
 import requests
 import scraper_arxiv as scraper
@@ -7,7 +8,6 @@ import scraper_arxiv as scraper
 scraper.arxiv()
 
 df = pd.read_csv('arxiv_data.csv')
-
 print("key",df)
 matrix_data = df.to_numpy()
 Len = len(matrix_data)
@@ -17,5 +17,5 @@ for i in range(Len) :
  print("The filename :", filename)
  print("the url :", arxiv_url)
  response = requests.get(arxiv_url)
- filename.write_bytes(response.content)
+ Path("/pdf/").write_bytes(response.content)
 
