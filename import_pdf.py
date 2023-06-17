@@ -17,13 +17,17 @@ while i < len(subject):
  
 choice = input("Choose the subject you want to scrape.\n")
 choice_subject = str(choice)
- 
-scraper.arxiv(choice_subject)      	
+x = 0
+while x < 5000 :
+	URL_arxiv = f"https://arxiv.org/search/?searchtype=all&query=lecture+notes&abstracts=show&size=200&order=-announced_date_first&start={x}"
+	scraper.arxiv(URL_arxiv,choice_subject)
+	print(x)
+	x += 200      	
+
 df = pd.read_csv('arxiv_data.csv')
 print("key",df)
 matrix_data = df.to_numpy()
 Len = len(matrix_data)
-
 for i in range(Len) :
 	filename = Path(matrix_data[i,0])
 	category = Path(f"{matrix_data[i,2]}/{matrix_data[i,0]}.pdf")

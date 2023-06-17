@@ -13,6 +13,8 @@ title_csv=[]
 url_csv=[]
 authors_csv=[]
 category_csv=[]
+op = webdriver.ChromeOptions()
+op.add_argument('headless')
 
 def field(subject): 
 	if subject == "Physics" :
@@ -23,9 +25,8 @@ def field(subject):
 		subsubject = f"{subject}"	
 	return subsubject
 	
-def arxiv(subject):
- 	driver = webdriver.Chrome()
- 	URL_arxiv = "https://arxiv.org/search/?query=lecture+notes&searchtype=all&source=header"
+def arxiv(URL_arxiv,subject):
+ 	driver = webdriver.Chrome(options=op)
  	driver.get(URL_arxiv)
  	page = requests.get(URL_arxiv)
  	content = driver.page_source
@@ -37,10 +38,7 @@ def arxiv(subject):
   		authors = ppri.find("p", class_="authors")
   		url = ppri.find("a", href_="")
   		category = ppri.find("span", class_="tag is-small is-link tooltip is-tooltip-top")
-  		print(category.text.strip())
-  		print(field(subject))
-  		input()
-  		if any(category.text.strip() == field(subject) for item in field(subject)) :
+  		if any(item == category.text.strip() for item in field(subject)) :
   		        title_csv.append(title.text.strip())
   		        url_csv.append(url.text.strip())
   		        authors_csv.append(authors.text.strip())
