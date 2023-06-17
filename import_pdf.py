@@ -1,6 +1,10 @@
 from pathlib import Path
 import pandas as pd
 import requests
+import scraper_arxiv as scraper
+
+
+scraper.arxiv()
 
 df = pd.read_csv('arxiv_data.csv')
 
