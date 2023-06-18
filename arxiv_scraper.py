@@ -20,10 +20,10 @@ while i < len(subject):
 	print(i,subject[i])
 	i += 1 
 
-print("-"*30) 
+print("-"*50) 
 choice = input("Choose the subject you want to scrape.\n")
 choice_subject = str(choice)
-print("-"*30) 
+print("-"*50) 
 x = 0
 print("The scraper is running, please wait until it's done. You can find later the data in the file arxiv_data.csv ordered by title, author, category and arXiv reference number")
 print(" "*30) 
