@@ -1,5 +1,6 @@
 from selenium import webdriver
 from bs4 import BeautifulSoup
+from pathlib import Path
 import pandas as pd
 import requests 
 
@@ -16,14 +17,12 @@ category_csv=[]
 abstract_csv=[]
 op = webdriver.ChromeOptions()
 op.add_argument('headless')
+f_out = open("abstract_data.txt","w+")
 
 def field(subject): 
-	if subject == "Physics" :
-		subsubject = subfield_physics
-	elif subject == "Mathematics" :
-		subsubject = subfield_maths
-	else :
-		subsubject = f"{subject}"	
+	if subject == "Physics" :subsubject = subfield_physics
+	elif subject == "Mathematics" :subsubject = subfield_maths
+	else :subsubject = f"{subject}"	
 	return subsubject
 	
 def arxiv(URL_arxiv,subject):
@@ -34,14 +33,15 @@ def arxiv(URL_arxiv,subject):
  	soup = BeautifulSoup(page.content, "html.parser")
  	results = soup.find(id="main-container")
  	papers = results.find_all("li", class_="arxiv-result")
- 	abstract = results.find_all("span", class_="abstract-short has-text-grey-dark mathjax")
  	for ppri in papers:
   		title = ppri.find("p", class_="title is-5 mathjax")
   		authors = ppri.find("p", class_="authors")
   		url = ppri.find("a", href_="")
   		category = ppri.find("span", class_="tag is-small is-link tooltip is-tooltip-top")
+  		abstract = results.find("span", class_="abstract-full has-text-grey-dark mathjax")
   		if any(item == category.text.strip() for item in field(subject)) :
   		        title_csv.append(title.text.strip())
+  		        title_final = title.text.strip()
   		        url_csv.append(url.text.strip())
   		        authors_csv.append(authors.text.strip())
   		        category_csv.append(category.text.strip())
@@ -50,7 +50,29 @@ def arxiv(URL_arxiv,subject):
   		        df['Authors'] = df['Authors'].replace('\\n', '', regex=True)
   		        df['Authors'] = df['Authors'].replace('           ', '', regex=True)
   		        df['Reference'] = df['Reference'].str.replace('arXiv:', '')
-  		        df.to_csv('arxiv_data.csv', index=False, encoding='utf-8') 
+  		        df.to_csv('arxiv_data.csv', index=False, encoding='utf-8')
+  		     
+  		        
+def abstract() :
+        f_out = open("abstract_data.txt","w+")
+        df = pd.read_csv('arxiv_data.csv')
+        matrix_data = df.to_numpy()
+        Len = len(matrix_data)
+        for i in range(Len) :
+                arxiv_reference = float(Path(matrix_data[i,3]))
+                abs_url = f"https://arxiv.org/abs/{arxiv_reference}"
+                driver = webdriver.Chrome(options=op)
+                driver.get(abs_url)
+                page = requests.get(abs_url)
+                content = driver.page_source
+                soup = BeautifulSoup(page.content, "html.parser")
+                results = soup.find(id="content")
+                abstract = results.find_all("span", class_="descriptor")
+                abstract_final = abstract.text.strip()
+                title = Path(matrix_data[i,0])
+                dic = f"{title}"+"\n"+f"{abstract_final}"+"\n"+"\n"+"\n"+"\n"+50*"="+"\n"
+                write("1",dic)
+                f_out.write(dic)		        
 	 		
  
 

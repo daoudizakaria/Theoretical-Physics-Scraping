@@ -34,6 +34,18 @@ while x == 0 :
 	scraper.arxiv(URL_arxiv,choice_subject)
 	x += 200     	
 
+print("-"*50) 
+print("Do you want to download the abstracts in a .txt file?\n")
+choice_subject = str(input())
+proceed='yes' or 'YES' or 'Yes' or 'y'
+not_proceed='no' or 'NO' or 'No' or 'n'
+if choice_subject == proceed :
+    print("The abstract proceeding is under process.")
+    scraper.abstract()
+else :
+    print("We won't download the abstract, the arXiv scrape will process directly")
+    print(" "*30)    
+print("-"*50)
 df = pd.read_csv('arxiv_data.csv')
 print("=="*50)
 print("key",df)
