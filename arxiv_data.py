@@ -13,6 +13,7 @@ title_csv=[]
 url_csv=[]
 authors_csv=[]
 category_csv=[]
+abstract_csv=[]
 op = webdriver.ChromeOptions()
 op.add_argument('headless')
 
@@ -33,6 +34,7 @@ def arxiv(URL_arxiv,subject):
  	soup = BeautifulSoup(page.content, "html.parser")
  	results = soup.find(id="main-container")
  	papers = results.find_all("li", class_="arxiv-result")
+ 	abstract = results.find_all("span", class_="abstract-short has-text-grey-dark mathjax")
  	for ppri in papers:
   		title = ppri.find("p", class_="title is-5 mathjax")
   		authors = ppri.find("p", class_="authors")
