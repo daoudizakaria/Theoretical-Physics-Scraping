@@ -1,0 +1,187 @@
+Scattering Amplitudes in Quantum Field Theory
+
+Abstract:  These lecture notes bridge a gap between introductory quantum field theory
+(QFT) courses and state-of-the-art research in scattering amplitudes. They
+cover the path from basic definitions of QFT to amplitudes relevant for
+processes in the Standard Model of particle physics. The book begins with a
+concise yet self-contained introduction into QFT, including perturbative
+quantum gravity. It then presents modern methods for calculating scattering
+amplitudes, focusing on tree-level amplitudes, loop-level integrands and
+loop-integration techniques. These methods help reveal intriguing relations
+between gauge and gravity amplitudes, and are of increasing importance for
+obtaining high-precision predictions for collider experiments, such as those at
+CERN's Large Hadron Collider, as well as for foundational mathematical physics
+studies in QFT, including recent applications to gravitational wave physics.
+These course-tested lecture notes include numerous exercises with detailed
+solutions. Requiring only minimal knowledge of QFT, they are well-suited for
+MSc and PhD students as a preparation for research projects in theoretical
+particle physics. They can be used as a one-semester graduate level course, or
+as a self-study guide for researchers interested in fundamental aspects of QFT.
+Supplementary material, Mathematica notebooks, corrections and further
+information are provided and maintained at the dedicated website
+this https URL .
+
+
+
+==================================================
+Physics of the Analytic S-Matrix
+
+Abstract:  You might've heard about various mathematical properties of scattering
+amplitudes such as analyticity, sheets, branch cuts, discontinuities, etc. What
+does it all mean? In these lectures, we'll take a guided tour through simple
+scattering problems that will allow us to directly trace such properties back
+to physics. We'll learn how different analytic features of the S-matrix are
+really consequences of causality, locality of interactions, unitary
+propagation, and so on.
+These notes are based on a series of lectures given in Spring 2023 at the
+Institute for Advanced Study in Princeton and the Higgs Centre School of
+Theoretical Physics in Edinburgh.
+
+
+
+==================================================
+An introduction to the analysis of gradients systems
+
+Abstract:  The present notes provide an extended version of a small lecture course given
+at the Humboldt Universität zu Berlin in the Winter Term 2022/23 (of 36
+hours). The material starting in Section 5.4 was added afterwards. The aim of
+these notes to give an introductory overview on the analytical approaches for
+gradient-flow equations in Hilbert spaces, Banach spaces, and metric spaces and
+to show that on the first entry level these theories have a lot in common. The
+theories and their specific setups are illustrated by suitable examples and
+counterexamples.
+
+
+
+==================================================
+Six lectures on Geometric Quantization
+
+Abstract:  These are the lecture notes for a short course on geometric quantization
+given by the author at the XVIII Modave Summer School on Mathematical Physics,
+Sep 5 - Sep 9.
+
+
+
+==================================================
+Madelung transform and variational asymptotics in Born-Oppenheimer molecular dynamics
+
+Abstract:  While Born-Oppenheimer molecular dynamics (BOMD) has been widely studied by
+resorting to powerful methods in mathematical analysis, this paper presents a
+geometric formulation in terms of Hamilton's variational principle and
+Euler-Poincaré reduction by symmetry. Upon resorting to the Lagrangian
+hydrodynamic paths made available by the Madelung transform, we show how BOMD
+arises by applying asymptotic methods to the variational principles underlying
+different continuum models and their particle closure schemes. In particular,
+after focusing on the hydrodynamic form of the fully quantum dynamics, we show
+how the recently proposed bohmion scheme leads to an alternative implementation
+of BOMD. In addition, we extend our analysis to models of mixed
+quantum-classical dynamics.
+
+
+
+==================================================
+Introduction to Loop Quantum Gravity: Rovelli's lectures on LQG
+
+Abstract:  These notes are a transcript of Carlo Rovelli's lectures on Loop Quantum
+Gravity, given in Marseille in 2018, which (at present) can be entirely found
+on YouTube. I transcribed them in LaTeX in early 2020 as an exercise to get
+ready for my Ph.D. in LQG at Western University. This transcript is meant to be
+a (hopefully helpful) integration for the video version. I reported the order
+of the topics and the chronological structure exactly as presented by Rovelli
+throughout the course, primarily to facilitate the comparison. Each Section
+corresponds to a different Lecture. The parts written in textit are my
+additions. Sometimes in the text, I report references, which specify precisely
+the minute and the second of the corresponding video on YouTube, to very short
+historical digressions or excursus made during the lectures by Rovelli that I
+have not explicitly transcribed in these notes. Where appropriate, I took some
+figures from the book "Covariant Loop Quantum Gravity - An elementary
+introduction to Quantum Gravity and Spinfoam Theory" by Carlo Rovelli and
+Francesca Vidotto, to which I always refer by the term "the book" in the
+following. For what concerns the equations, where possible, I tried to write
+down the "correct" versions present within the book. Finally, I thank Carlo
+Rovelli himself for reviewing these notes. I apologize in advance for any
+errors, and I wish everyone a lot of fun!
+
+
+
+==================================================
+Beginners lectures on flux compactifications and related Swampland topics
+
+Abstract:  These lecture notes provide a pedagogical introduction, with exercises, to
+the techniques used in attempts to construct vacua with stabilised moduli in
+string theory. The reader is only assumed to have a basic knowledge of general
+relativity, geometry and field theory. We emphasize physical arguments and
+focus on the latest developments involving the Swampland program that point to
+a tension for the existence of AdS vacua with small extra dimensions or dS
+vacua with parametric control. We include a brief summary of the current status
+of these thorny issues. Unlike many other reviews we make almost no use of the
+technicalities associated to supersymmetric geometries. These notes are largely
+based on lectures given at the CERN Winter School on Supergravity, Strings and
+Gauge Theory and in the Tehran School on Swampland Program held in the summer
+of 2022.
+
+
+
+==================================================
+TASI Lectures: (No) Global Symmetries to Axion Physics
+
+Abstract:  These notes are an expanded version of lectures given at the 2022 TASI summer
+school in Boulder, Colorado. One goal of these lecture notes is to (partially)
+bridge the gap between what one learns in typical introductory quantum field
+theory classes and what one needs to understand to follow modern developments
+in particle theory beyond the Standard Model. Topics covered include global and
+gauge symmetries, charge quantization, instantons, chiral anomalies, the Strong
+CP problem, axion models from 4d and from higher dimensions, the expected
+absence of global symmetries in quantum gravity, and some phenomenological
+implications thereof. If these topics seem to be at best loosely related, I
+hope that reading the notes will convince you otherwise. Recent developments in
+quantum field theory have shown that ordinary gauge theories exhibit a much
+wider range of (generalized) global symmetries than were previously understood,
+while recent work in quantum gravity has provided sharper arguments that global
+symmetries should not exist. This sets up an interesting tension, the
+resolution of which can have implications for particle physics in the real
+world. Axion physics is one setting in which these ideas can guide
+phenomenology. The TASI audience comprised particle phenomenology students whom
+I hoped to convince of the importance of learning more about quantum field
+theory and quantum gravity. These notes may also be of interest to formal
+theory readers seeking closer connections to real-world particle physics.
+
+
+
+==================================================
+Quantum Mechanics Lecture Notes. Selected Chapters
+
+Abstract:  These are extended lecture notes of the quantum mechanics course which I am
+teaching in the Weizmann Institute of Science graduate physics program. They
+cover the topics listed below. The first four chapter are posted here. Their
+content is detailed on the next page. The other chapters are planned to be
+added in the coming months.
+1. Motion in External Electromagnetic Field. Gauge Fields in Quantum
+Mechanics.
+2. Quantum Mechanics of Electromagnetic Field
+3. Photon-Matter Interactions
+4. Quantization of the Schrödinger Field (The Second Quantization)
+5. Open Systems. Density Matrix
+6. Adiabatic Theory. The Berry Phase. The Born-Oppenheimer Approximation
+7. Mean Field Approaches for Many Body Systems -- Fermions and Bosons
+
+
+
+==================================================
+Scalar CFTs from structural phase transitions
+
+Abstract:  We discuss scalar conformal field theories (CFTs) that can be realized in
+structural phase transitions. The Landau condition and Lifshitz condition are
+reviewed, which are necessary conditions for a structural phase transition to
+be second order. We also review the perturbative analysis in $4-\epsilon$
+expansion of the corresponding Landau actions, which were already analyzed
+thoroughly in the 80s. By identifying the global symmetries of these fixed
+points, it turns out that in perturbation theory only 6 different CFTs can be
+realized by commensurate structural phase transitions. This is a lecture note
+based on a series of talks given by the author. The goal of the lecture note is
+to bridge the gap between condensed matter physicists and conformal field
+theorists. The note will be further updated in the future.
+
+
+
+==================================================

@@ -10,6 +10,7 @@ subfield_physics = ["astro-ph", "cond-mat", "gr-qc", "hep-ex", "hep-lat", "hep-p
 
 subfield_maths = ["math.AG", "math.AT", "math.AP", "math.CT", "math.CA", "math.CO", "math.AC", "math.CV", "math.DG", "math.DS", "math.FA", "math.GM", "math.GN", "math.GT", "math.GR", "math.HO", "math.IT", "math.KT", "math.LO", "math.MP", "math.MG", "math.NT", "math.MA", "math.OA", "math.OC", "math.PR", "math.QA", "math.RT", "math.RA", "math.SP", "math.ST", "math.SG"]
 
+number_txt=[]
 title_csv=[]
 url_csv=[]
 authors_csv=[]
@@ -18,6 +19,20 @@ abstract_csv=[]
 op = webdriver.ChromeOptions()
 op.add_argument('headless')
 f_out = open("abstract_data.txt","w+")
+
+def num_lec(): 
+	driver = webdriver.Chrome(options=op)
+	URL_arxiv = "https://arxiv.org/search/?searchtype=all&query=lecture+notes&abstracts=show&size=200&order=-announced_date_first&start=0"
+	driver.get(URL_arxiv)
+	page = requests.get(URL_arxiv)
+	content = driver.page_source
+	soup = BeautifulSoup(page.content, "html.parser")
+	results = soup.find("main", class_="container")
+	number = results.find("h1", class_="title is-clearfix")
+	number = number.text.strip()
+	number_txt.extend(number.split())
+	n = str(number_txt[3])
+	return n
 
 def field(subject): 
 	if subject == "Physics" :subsubject = subfield_physics
@@ -59,19 +74,16 @@ def abstract() :
         matrix_data = df.to_numpy()
         Len = len(matrix_data)
         for i in range(Len) :
-                arxiv_reference = float(Path(matrix_data[i,3]))
-                abs_url = f"https://arxiv.org/abs/{arxiv_reference}"
+                abs_url = f"https://arxiv.org/abs/{matrix_data[i,3]}"
                 driver = webdriver.Chrome(options=op)
                 driver.get(abs_url)
                 page = requests.get(abs_url)
                 content = driver.page_source
                 soup = BeautifulSoup(page.content, "html.parser")
-                results = soup.find(id="content")
-                abstract = results.find_all("span", class_="descriptor")
+                abstract = soup.find("blockquote", class_="abstract mathjax")
                 abstract_final = abstract.text.strip()
                 title = Path(matrix_data[i,0])
-                dic = f"{title}"+"\n"+f"{abstract_final}"+"\n"+"\n"+"\n"+"\n"+50*"="+"\n"
-                write("1",dic)
+                dic = f"{title}"+"\n"+"\n"+f"{abstract_final}"+"\n"+"\n"+"\n"+"\n"+50*"="+"\n"
                 f_out.write(dic)		        
 	 		
  
