@@ -185,3 +185,198 @@ theorists. The note will be further updated in the future.
 
 
 ==================================================
+The physics of gravitational waves
+
+Abstract:  These lecture notes collect the material that I have been using over the
+years for various short courses on the physics of gravitational waves, first at
+the Institut d'Astrophysique de Paris (France), and then at SISSA (Italy) and
+various summer/winter schools. The level should be appropriate for PhD students
+in physics or for MSc students that have taken a first course in general
+relativity. The focus is on deriving results from first principles, rather than
+on astrophysical applications.
+
+
+
+==================================================
+Basic ZX-calculus for students and professionals
+
+Abstract:  These are the lecture notes of guest lectures for Artur Ekert's course
+Introduction to Quantum Information at the Mathematical Institute of Oxford
+University, Hilary Term 2023. Some basic familiarity with Dirac notation is
+assumed. For the readers of Quantum in Pictures (QiP) who have some basic
+quantum background, these notes also constitute the shortest path to an
+explanation of how what they learn in QIP relates to the traditional quantum
+formalism.
+
+
+
+==================================================
+TASI Lectures on the Particle Physics and Astrophysics of Dark Matter
+
+Abstract:  These lecture notes on the particle physics and astrophysics of dark matter
+(DM) were delivered at TASI 2022 ``Ten Years After the Higgs Discovery:
+Particle Physics Now and Future." The focus of these lecture notes, aimed at
+the level of advanced graduate students and beginning postdocs, is on indirect
+(i.e., astrophysical and cosmological) probes of particle DM models. While DM
+models and indirect detection are broadly discussed, the examples of weakly
+interacting massive particles (WIMPs) and axions are worked out in detail. The
+topics covered include: the role of DM in the cosmology and astrophysics of
+structure formation, including DM density profiles in galaxies, general
+constraints on particle DM models, the theory of minimal DM, with the higgsino
+as a relevant and illustrative example, indirect detection with gamma-rays,
+including with the upcoming Cherenkov Telescope Array, axions as a solution to
+the strong-CP problem and a DM candidate, including discussions of possible
+ultraviolet completions and of axion string cosmology, and astrophysical probes
+of axions such as with isocurvature perturbations, $N_{\rm eff}$, black hole
+superradiance, radio telescopes, spectral modulations, stellar polarization,
+and stellar cooling, amongst other topics. Example Jupyter notebooks are
+provided that walk the reader through relevant analyses, including an example
+statistical analysis of a DM annihilation search towards the Segue I dwarf
+galaxy with gamma-ray data from the Fermi Large Area Telescope that is relevant
+for DM explanations of the Fermi Galactic Center Excess. We also provide an
+introduction to frequentist statistics for particle and astro-particle physics.
+These lecture notes are meant to be pedagogical, with the focus on explaining
+the underlying physical principles and analysis techniques that are set to play
+crucial roles in the search for particle DM in the coming decade.
+
+
+
+==================================================
+Lagrangian trajectories and closure models in mixed quantum-classical dynamics
+
+Abstract:  Mixed quantum-classical models have been proposed in several contexts to
+overcome the computational challenges of fully quantum approaches. However,
+current models typically suffer from long-standing consistency issues, and, in
+some cases, invalidate Heisenberg's uncertainty principle. Here, we present a
+fully Hamiltonian theory of quantum-classical dynamics that appears to be the
+first to ensure a series of consistency properties, beyond positivity of
+quantum and classical densities. Based on Lagrangian phase-space paths, the
+model possesses a quantum-classical Poincaré integral invariant as well as
+infinite classes of Casimir functionals. We also exploit Lagrangian
+trajectories to formulate a finite-dimensional closure scheme for numerical
+implementations.
+
+
+
+==================================================
+Representation theory in the construction of free quantum field
+
+Abstract:  This is mainly a lecture note taken by myself following Weinberg's book, but
+also contains some corrections to the abuse of mathematical treatment. This
+article discusses projective unitary representations of Poincare group on the
+single particle space, multi particle space also known as the Fock space,
+creation and annilation operators, construction of free quantum fields and the
+general relation between spin of state and spin of field. Both massive and
+massless cases are considered. CPT is not considered. The first section briefly
+reviews the basics of representation theory. This article further points out
+some of the wrong treatment of mathematics in the book of Weinberg, and
+reformulates them, including: Wigner's classification needs to be pass to the
+universal cover via Bargmann's theorem, there is no projective representation
+of Poincare group on Fock space in general, the Lorentz transformation of
+fields need to be formulated with representations of the universal covers,
+Dirac representation is not a linear representation of the Lorentz group. This
+article also discusses the physical meaning of the state representation and its
+relation with Schrodinger equation, compare its difference with state
+representation, and the reason of equations of relativistic quantum mechanics
+should be understood as a field equation rather than a wave function equation.
+of equations of relativistic quantum mechanics should be understood as a field
+equation rather than a wave function equation.
+
+
+
+==================================================
+Relativity
+
+Abstract:  These lectures notes contain an introduction to General Relativity. They are
+addressed to a general mathematical audience with no specific background in
+physics. The goal is to motivate and explain Einstein's theory of gravity and
+discuss some of the fundamental examples.
+
+
+
+==================================================
+String Field Theory -- A Modern Introduction
+
+Abstract:  This book provides an introduction to string field theory (SFT). String
+theory is usually formulated in the worldsheet formalism, which describes a
+single string (first-quantization). While this approach is intuitive and could
+be pushed far due to the exceptional properties of two-dimensional theories, it
+becomes cumbersome for some questions or even fails at a more fundamental
+level. These motivations have led to the development of SFT, a description of
+string theory using the field theory formalism (second-quantization). As a
+field theory, SFT provides a rigorous and constructive formulation of string
+theory.
+The main objective is to construct the closed bosonic SFT and to explain how
+to assess the consistency of string theory with it. The accent is put on
+providing the reader with the foundations, conceptual understanding and
+intuition of what SFT is. After reading this book, they should be able to study
+the applications from the literature.
+The book is organized in two parts. The first part reviews the topics of the
+worldsheet theory that are necessary to build SFT (worldsheet path integral,
+CFT and BRST quantization). The second part starts by introducing general
+concepts of SFT from the BRST quantization. Then, it introduces off-shell
+string amplitudes before providing a Feynman diagrams interpretation from which
+the building blocks of SFT are extracted. After constructing the closed SFT, it
+is used to outline the proofs of several important consistency properties, such
+as background independence, unitarity and crossing symmetry. Finally, the
+generalization to the superstring is also discussed.
+This book grew up from lecture notes for a course given at the
+Ludwig-Maximilians-Universität LMU (winter semesters 2017-2018 and
+2018-2019). The current document is the draft of the manuscript published by
+Springer.
+
+
+
+==================================================
+Lecture Notes on Quantum Algorithms
+
+Abstract:  The lecture notes contain three parts. The first part is Grover's Search
+Algorithm with modifications, generalizations, and applications. The second
+part is a discussion on the quantum fingerprinting technique. The third part is
+Quantum Walks (discrete time) algorithm with applications.
+
+
+
+==================================================
+From Asymptotic Symmetries to the Corner Proposal
+
+Abstract:  These notes are a transcript of lectures given by the author in the XVIII
+Modave summer school in mathematical physics. The introduction is devoted to a
+detailed review of the literature on asymptotic symmetries, flat holography,
+and the corner proposal. It covers much more material than needed, for it is
+meant as a lamppost to help the reader in navigating the vast existing
+literature. The notes then consist of three main parts. The first is devoted to
+Noether's theorems and their underlying framework, the covariant phase space
+formalism, with special focus on gauge theories. The surface-charges algebra is
+shown to projectively represent the asymptotic symmetry algebra. Issues arising
+in the gravitational case, such as conservation, finiteness, and integrability,
+are addressed. In the second part, we introduce the geometric concept of
+corners, and show the existence of a universal asymptotic symmetry group at
+corners. A careful treatment of corner embeddings provides a resolution to the
+issue of integrability, by extending the phase space. In the last part we
+bridge asymptotic symmetries and corners by formulating the corner proposal. In
+essence, the latter focuses on the central question of extracting from
+classical gravity universal results that are expected to hold in the quantum
+realm. After reviewing the coadjoint orbit method and Atiyah Lie algebroids, we
+apply these concepts to the corner proposal. Exercises are solved in the notes,
+to elucidate the arguments exposed.
+
+
+
+==================================================
+Lectures on the string landscape and the Swampland
+
+Abstract:  We provide an overview of the string landscape and the Swampland program. Our
+review of the string landscape covers the worldsheet and spacetime
+perspectives, including vacua and string dualities. We then review and motivate
+the Swampland program from the lessons learned from the string landscape. These
+lecture notes are aimed to be self-contained and thus can serve as a starting
+point for researchers interested in exploring these ideas.
+These notes are an expanded version of two courses "The String Landscape and
+the Swampland" taught by C.~Vafa at Harvard University in 2018 with a focus on
+the landscape, written by M.~J.~Kang with additional material from N.~B.~Agmon,
+and in 2022 with a focus on the Swampland, written by A.~Bedroya.
+
+
+
+==================================================
