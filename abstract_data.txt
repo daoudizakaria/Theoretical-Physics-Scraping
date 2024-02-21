@@ -73,7 +73,7 @@ hydrodynamic paths made available by the Madelung transform, we show how BOMD
 arises by applying asymptotic methods to the variational principles underlying
 different continuum models and their particle closure schemes. In particular,
 after focusing on the hydrodynamic form of the fully quantum dynamics, we show
-how the recently proposed bohmion scheme leads to an alternative implementation
+how the recently proposed bohmion scheme leads to an on-the-fly implementation
 of BOMD. In addition, we extend our analysis to models of mixed
 quantum-classical dynamics.
 
@@ -334,48 +334,6 @@ Abstract:  The lecture notes contain three parts. The first part is Grover's Sea
 Algorithm with modifications, generalizations, and applications. The second
 part is a discussion on the quantum fingerprinting technique. The third part is
 Quantum Walks (discrete time) algorithm with applications.
-
-
-
-==================================================
-From Asymptotic Symmetries to the Corner Proposal
-
-Abstract:  These notes are a transcript of lectures given by the author in the XVIII
-Modave summer school in mathematical physics. The introduction is devoted to a
-detailed review of the literature on asymptotic symmetries, flat holography,
-and the corner proposal. It covers much more material than needed, for it is
-meant as a lamppost to help the reader in navigating the vast existing
-literature. The notes then consist of three main parts. The first is devoted to
-Noether's theorems and their underlying framework, the covariant phase space
-formalism, with special focus on gauge theories. The surface-charges algebra is
-shown to projectively represent the asymptotic symmetry algebra. Issues arising
-in the gravitational case, such as conservation, finiteness, and integrability,
-are addressed. In the second part, we introduce the geometric concept of
-corners, and show the existence of a universal asymptotic symmetry group at
-corners. A careful treatment of corner embeddings provides a resolution to the
-issue of integrability, by extending the phase space. In the last part we
-bridge asymptotic symmetries and corners by formulating the corner proposal. In
-essence, the latter focuses on the central question of extracting from
-classical gravity universal results that are expected to hold in the quantum
-realm. After reviewing the coadjoint orbit method and Atiyah Lie algebroids, we
-apply these concepts to the corner proposal. Exercises are solved in the notes,
-to elucidate the arguments exposed.
-
-
-
-==================================================
-Lectures on the string landscape and the Swampland
-
-Abstract:  We provide an overview of the string landscape and the Swampland program. Our
-review of the string landscape covers the worldsheet and spacetime
-perspectives, including vacua and string dualities. We then review and motivate
-the Swampland program from the lessons learned from the string landscape. These
-lecture notes are aimed to be self-contained and thus can serve as a starting
-point for researchers interested in exploring these ideas.
-These notes are an expanded version of two courses "The String Landscape and
-the Swampland" taught by C.~Vafa at Harvard University in 2018 with a focus on
-the landscape, written by M.~J.~Kang with additional material from N.~B.~Agmon,
-and in 2022 with a focus on the Swampland, written by A.~Bedroya.
 
 
 
